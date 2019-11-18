@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.avatar{
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.avatarColumn {
+float: left;
+width: 30%;
+}
+
+.descColumn {
+float: left;
+width: 70%;
+}
+
+.mainRow {
+ width: 800px;
+ magin: auto;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.row {
+ width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 400px) {
+.avatarColumn {
+  display: none;
+}
+}
+
+@media screen and (min-width: 800px) {
+  #logoGrey {
+    display:none;
+  }
+}
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Proza+Libre);
+
+body {
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.merriweather-header {
+  font-family: Merriweather;
+  font-size: 34px;
+  font-weight: normal;
+  word-spacing:-0.2rem;
+  line-height:1.1;
+  color: #241c15;
+
+}
+
+.proza-libre-content {
+  font-family: "Proza Libre";
+  font-size: 14px;
+  color: #241c15;
+}
+
+.proza-libre-password-validation {
+  font-family: "Proza Libre";
+  font-size: 12px;
+  color: #241c15;
+}
+
+.proza-libre-content-footer {
+  font-family: "Proza Libre";
+  font-size: 11px;
+  color: rgba(36,28,21,0.65);
+}

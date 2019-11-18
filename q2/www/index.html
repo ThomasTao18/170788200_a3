@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>FakeChimps</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" async></script>
+</head>
+
+<body>
+  <div class="mainRow">
+  <div class="row">
+
+  <div class="avatarColumn">
+    <img id="logoColor" src="img/logo-color.png" style="width:120px;">
+  </div>
+
+  <div class="descColumn">
+
+    <img id="logoGrey" src="img/logo-black-white.png" style="width:120px;">
+
+    <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+      <h1>
+        Get started with your
+        <br>account</br>
+      </h1>
+      <p>
+        Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing platform. Already have an account? Log in
+      </p>
+      <p>
+        <input type="hidden" name="student_id" id="student_id" value="170788200">
+        Email
+       <br><input type="text" name="email" id="email" size="50"></br>
+      </p>
+
+      <p>
+        Username
+       <br><input type="text" name="username" id="username" size="50"></br>
+      </p>
+
+      <p>
+        Password
+      <br><input type="password" name="password" id="password" size="50"></br>
+      </p>
+
+      <p>
+        <input type="submit" value="Get Started!">
+        By clicking the "Get Started!" button, you are creating a Mailchimp account, and you agree to Mailchimp's Terms of Use and Privacy Policy
+      </p>
+    </form>
+
+  </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>

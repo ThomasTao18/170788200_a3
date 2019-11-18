@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.avatar{
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.avatarColumn {
+float: left;
+width: 30%;
+}
+
+.descColumn {
+float: left;
+width: 70%;
+}
+
+.mainRow {
+ width: 800px;
+ magin: auto;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.row {
+ width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 400px) {
+.avatarColumn {
+  display: none;
+}
+}
+
+@media screen and (min-width: 800px) {
+  #logoGrey {
+    display:none;
+  }
+}
